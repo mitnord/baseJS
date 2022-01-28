@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Homework</title>
 </head>
+
 <body>
-<!--
+  <!--
 Необязательное задание.
 
 Необходимо от пользователя получить число.
@@ -25,10 +27,12 @@
 
 Уточнение: пользователь всегда вводит корректное положительное число.
 -->
-<script>
-  "use strict";
-
-  // Здесь пишем решение, данный комментарий необходимо стереть.
-</script>
+  <script>
+    "use strict";
+    let n = prompt('Введите число');
+    let arr = n.split("");
+    alert(`В числе ${n} количество сотен: ${arr[arr.length - 3]}, десятков: ${arr[arr.length - 2]}, единиц: ${arr[arr.length - 1]}`);
+  </script>
 </body>
+
 </html>
