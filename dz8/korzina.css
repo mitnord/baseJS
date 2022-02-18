@@ -1,0 +1,17 @@
+.rightHeader{
+    position: relative;
+}
+.cartCounter{
+    /* visibility: hidden; */
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: #ffffff;
+    border: solid 1px #222224;
+    gap: 10px;
+
+}
+.cartCounter ul{
+    list-style: none;
+    display: flex;
+}
