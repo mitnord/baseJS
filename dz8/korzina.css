@@ -1,17 +1,33 @@
+
+
 .rightHeader{
     position: relative;
 }
 .cartCounter{
-    /* visibility: hidden; */
+    visibility: hidden;
     position: absolute;
     right: 0;
-    width: 300px;
+    max-width: 500px;
+    width: 50vw;
     background-color: #ffffff;
     border: solid 1px #222224;
     gap: 10px;
-
+    z-index: 600;
 }
-.cartCounter ul{
-    list-style: none;
+
+
+
+.cartCounter-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.cartCounter-total{
     display: flex;
+    justify-content: right;
+    font-weight: 800;
 }
