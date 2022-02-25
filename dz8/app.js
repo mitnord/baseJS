@@ -30,4 +30,3 @@ filterSizeWrap.addEventListener('click', function () {
     filterSizes.classList.toggle('hidden');
 });
 
-
