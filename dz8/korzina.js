@@ -1,5 +1,7 @@
-//приступим
+'use strict';
 
+
+const basket = {}
 class product {
     constructor(id, name, price) {
         this.id = id;
@@ -8,23 +10,17 @@ class product {
     }
 }
 
-const basket = {}
-
-
 document.querySelectorAll('.featuredItem').forEach(elem => elem.addEventListener('click', event => {
+    document.querySelector('.cartIconWrap span').style.visibility = 'visible';
     const choosenItem = event.currentTarget;
     const addedItem = new product(choosenItem.dataset.id, choosenItem.dataset.name, choosenItem.dataset.price);
     addToCart(basket, addedItem);
-
 })
 );
 
 document.querySelector('.cartIconWrap').addEventListener('click', event => {
-    console.log(event.currentTarget.parentNode);
     event.currentTarget.parentNode.querySelector('.cartCounter').style.visibility = "visible";
 })
-
-
 
 function addToCart(basket, productObj) {
     if (!basket.hasOwnProperty(`${productObj.id}`)) {
